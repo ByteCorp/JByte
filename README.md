@@ -10,6 +10,7 @@ For example:
 ```javascript
 var firstName = "Tom";
 var surName = "Davies";
+
 document.write(JByte("My name is {0} {1}",firstName,surName));
 ```
 
