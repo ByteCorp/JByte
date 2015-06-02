@@ -10,11 +10,10 @@ For example:
 ```javascript
 var firstName = "Tom";
 var surName = "Davies";
-
-document.write("My name is {0} {1}",firstName,surName);
+document.write(JByte("My name is {0} {1}",firstName,surName));
 ```
 
-will return 
+will write 
 
 ```
 My name is Tom Davies
