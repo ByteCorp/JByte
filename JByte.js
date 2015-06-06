@@ -17,31 +17,10 @@
  * @param variable10
  * */
 
-function JByte(textToFormat, variable1, variable2, variable3, variable4, variable5, variable6, variable7, variable8, variable9, variable10) {
-    var formattedText;
-
-    variable1 = variable1 || "";
-    variable2 = variable2 || "";
-    variable3 = variable3 || "";
-    variable4 = variable4 || "";
-    variable5 = variable5 || "";
-    variable6 = variable6 || "";
-    variable7 = variable7 || "";
-    variable8 = variable8 || "";
-    variable9 = variable9 || "";
-    variable10 = variable10 || "";
-
-    formattedText = textToFormat
-        .replace(new RegExp("(\\{0\\})", "g"), variable1)
-        .replace(new RegExp("(\\{1\\})", 'g'), variable2)
-        .replace(new RegExp("(\\{2\\})", 'g'), variable3)
-        .replace(new RegExp("(\\{3\\})", 'g'), variable4)
-        .replace(new RegExp("(\\{4\\})", 'g'), variable5)
-        .replace(new RegExp("(\\{5\\})", 'g'), variable6)
-        .replace(new RegExp("(\\{6\\})", 'g'), variable7)
-        .replace(new RegExp("(\\{7\\})", 'g'), variable8)
-        .replace(new RegExp("(\\{8\\})", 'g'), variable9)
-        .replace(new RegExp("(\\{9\\})", 'g'), variable10);
-
-    return formattedText;
+function JByte(textToFormat) {
+  for (var a = arguments, i = 1, j = arguments.length, formattedText = textToFormat || ''; i < j; i++) {
+    formattedText = formattedText.replace(new RegExp('\\{' + (i - 1) + '\\}', 'gm'), a[i]);
+  }
+  
+  return formattedText;
 }
