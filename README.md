@@ -14,10 +14,8 @@ var surName = "Davies";
 document.write(JByte("My name is {0} {1}",firstName,surName));
 ```
 
-will write 
+will output 
 
 ```
 My name is Tom Davies
 ```
-
-At the moment, JByte is able to use up to 10 variables ( {0} - {9} )
