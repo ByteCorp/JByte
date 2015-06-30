@@ -1,4 +1,4 @@
-![JByte](http://bytecorp.co.uk/images/JB.png)
+![alt text](http://bytecorp.co.uk/images/JB.png "JByte")
 # JByte
 JByte is a JavaScript port of the C# function String.Format
 
